@@ -1,6 +1,7 @@
 import ButtonPrimary from "../../components/button/ButtonPrimary";
 import ButtonSecondary from "../../components/button/ButtonSecondary";
 import Container from "../../components/container/Container";
+import Exclusive from "../../components/exclusive/Exclusive";
 import Slider from "../../components/slider/Slider";
 
 const Hero = () => {
@@ -47,7 +48,9 @@ const Hero = () => {
 
             <Slider></Slider>
           </div>
-          <div className="h-full  hero-frame">jklfkdkfdskf</div>
+          <div className="h-full  hero-frame">
+            <Exclusive></Exclusive>
+          </div>
         </div>
       </Container>
     </section>
