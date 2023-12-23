@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-frame {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-frame {
+    background-image: url("./assets/image/frame.png");
+    background-size: cover;
+  }
+}

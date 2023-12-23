@@ -1,15 +1,16 @@
 import ButtonPrimary from "../../components/button/ButtonPrimary";
 import ButtonSecondary from "../../components/button/ButtonSecondary";
 import Container from "../../components/container/Container";
+import Slider from "../../components/slider/Slider";
 
 const Hero = () => {
   return (
-    <section className="py-20 ">
+    <section className="py-14  ">
       <Container>
-        <div className="flex justify-between items-center">
-          <div className="flex-1">
-            <div className="flex text-5xl leading-[60px] font-semibold text-secondary gap-2">
-              <span className="flex mt-2 justify-center h-7 w-7 rounded-full border border-secondary">
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-8">
+          <div className="">
+            <div className="flex text-2xl sm:text-4xl xl:text-5xl sm:leading-[60px] font-semibold text-secondary gap-2">
+              <span className="flex mt-1 sm:mt-3 lg:mt-2 justify-center h-7 w-7 rounded-full border border-secondary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -30,7 +31,7 @@ const Hero = () => {
                 <span className="text-black">Technology</span>
               </h1>
             </div>
-            <div className="text-lg text-secondary flex mt-5  gap-[18px]">
+            <div className="lg:text-lg text-base w-full text-secondary flex mt-5  gap-[18px]">
               <div>
                 <span className="h-4 w-4  border bg-black rounded-full inline-block"></span>
               </div>
@@ -39,12 +40,14 @@ const Hero = () => {
                 mobile experience with our cutting-edge devices and innovations.
               </p>
             </div>
-            <div className="flex items-centers gap-8 mt-8 ">
+            <div className="flex items-centers gap-4 sm:gap-8 mt-8 ml-8">
               <ButtonPrimary>Pre Order</ButtonPrimary>
               <ButtonSecondary>View video</ButtonSecondary>
             </div>
+
+            <Slider></Slider>
           </div>
-          <div className="flex-1"></div>
+          <div className="h-full  hero-frame">jklfkdkfdskf</div>
         </div>
       </Container>
     </section>
