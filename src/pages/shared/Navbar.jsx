@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import Container from "../../components/container/Container";
 import { useEffect, useState } from "react";
+import Logo from "../../components/logo/Logo";
 
 const linkList = (
   <>
@@ -77,12 +78,9 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <Link
-            className=" font-semibold md:text-3xl md:block hidden text-[26px]"
-            style={{ letterSpacing: "-4px" }}
-          >
-            MobileMagnet
-          </Link>
+          <div className="md:block hidden">
+            <Logo></Logo>
+          </div>
 
           <div className="flex items-center gap-6">
             <Link className="bg-white border active:scale-95 border-gray-300 p-1 px-4 rounded-2xl shadow-sm">
@@ -127,12 +125,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center mb-5">
-          <Link
-            className=" font-semibold md:text-3xl  text-[26px]"
-            style={{ letterSpacing: "-4px" }}
-          >
-            MobileMagnet
-          </Link>
+          <Logo></Logo>
           <button
             onClick={() => setOpen(false)}
             className="md:hidden flex h-9 w-9 bg-white border rounded-full active:scale-95 border-gray-300 shadow-sm items-center justify-center"
